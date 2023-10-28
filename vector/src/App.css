@@ -1,0 +1,239 @@
+.card {
+  width: 400px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  text-align: justify;
+  padding: 10px;
+  background-color: rgb(175, 139, 145);
+}
+
+* {
+  padding: 0px;
+  outline: 0px;
+  margin: 0px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-basis: 300px;
+  flex-grow: 300px;
+  gap: 30px;
+  background-color: rgb(187, 154, 159);
+  justify-content: space-evenly;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width:700px) {
+  nav {
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width:270px) {
+  nav {
+    width: 100%;
+    height: 25vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .link1 {
+    text-decoration: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: rgb(55, 55, 59);
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    
+  }
+  
+}
+.link {
+  text-decoration: none;
+}
+
+.link1 {
+  text-decoration: none;
+  width: 80px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: rgb(55, 55, 59);
+  text-align: center;
+  color: white;
+  box-sizing: content-box;
+  font-size: 23px;
+  padding: 5px;
+}
+
+.signup {
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: white;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/free-photo/workplace-business-modern-male-accessories-laptop-black-background_155003-3944.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698105600&semt=ais");
+}
+
+.nav-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+ 
+  gap: 20px;
+  justify-content: center;
+}
+
+.signup-card {
+  width: 400px;
+  height: 300px;
+  border: 2px solid rgb(187, 182, 182);
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.input {
+  width: 90%;
+  height: 30px;
+  background: transparent;
+  color: white;
+  font-size: 25px;
+}
+
+.nav-input {
+  background: transparent;
+  padding-left: 40px;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.search {
+  position: absolute;
+  left: 15px;
+  margin-top: 10px;
+}
+
+.nav-search {
+  position: relative;
+}
+
+.add-cart-button {
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.home {
+  background-color: gray;
+}
+
+.curosel {
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+}
+
+.car {
+  position: relative;
+}
+
+.fa-less-than {
+  position: absolute;
+  left: 10px;
+  top: 20vh;
+  font-size: 40px;
+}
+
+.fa-greater-than {
+  position: absolute;
+  right: 10px;
+  top: 20vh;
+  font-size: 40px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  transition: transform 0.5s;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.carousel-item.active {
+  display: flex;
+  transform: translateX(0);
+}
